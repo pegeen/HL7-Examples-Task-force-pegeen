@@ -1,0 +1,13 @@
+<componentOf>
+  <encompassingEncounter>
+    <id root='' extension='67483902'/>
+    <id root='55500055555' extension='for TINS'/>
+    <code>
+    <encounterParticipant> @typecode
+    <location>
+        <healthCareFaility>
+          <id>
+        </healthCareFacility>
+   </location>
+  </encompassingEncounter>
+<component>
