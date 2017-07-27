@@ -1,7 +1,7 @@
 <!-- Only one occurance of informationRecipient allowed in C-CDA-->
-<informationRecipient>
+<informationRecipient typeCode='PRCP'>
   <!-- Only one intended Recipient allowed in C-CDA-->
-  <intendedRecipient>
+  <intendedRecipient classCode ='ASSIGNED'>
     <!-- Multiple addresses and phone numbers can appear here-->
     <! -- Only one nested informationRecipient allowed in C-CDA-->
     <informationRecipient>
