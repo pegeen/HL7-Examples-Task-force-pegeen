@@ -1,86 +1,61 @@
-<!--This first one represents the patient (who will receive it in the patient portal--/>
+<!--This document is used foir multiple purposes so it has multiple information recipients --/>
+<!--This first one represents the patient (who will receive it in the patient portal)--/>
 <informationRecipient typeCode='PRCP'>
   <intendedRecipient classCode ='ASSIGNED'>
+    <id root='' extension='MRN12345'>
     <informationRecipient>
       <name>
         <given>Patty</given>
         <family>Patient</family>
       </name>
     </informationRecipient>
-    <receivedOrganization>
-      <name>Community Health and Hospitals</name>
-      <telecom value="tel:+1(555)-555-1002" use="WP" />
-      <addr use="WP">
-        <streetAddressLine>Cardiac Stepdown Unit, 4B </streetAddressLine>
-        <streetAddressLine>1002 Healthcare Drive </streetAddressLine> 
-        <city>Ann Arbor</city>            
-        <state>MI</state> 
-        <postalCode>97857</postalCode>         
-        <country>US</country>   
-      </addr>
-    </receivedOrganization>  
-  </intendedRecipient>
+   </intendedRecipient>
 </informationRecipient>
-<!--This second one represents the portal "health care chart"--/>
-<informationRecipient typeCode='PRCP'>
-  <intendedRecipient classCode ='ASSIGNED'>   
-    <informationRecipient>
-    </informationRecipient>   
+<!--This second one is secondary and represents the patient portal as a "health care chart"--/>
+<informationRecipient typeCode='TRC'>
+  <intendedRecipient classCode ='HLTHCHRT'>   
     <receivedOrganization>     
-      <name>Community Health and Hospitals</name> 
+      <name>Anytown Community Health Patient Portal</name> 
       <telecom value="tel:+1(555)-555-1002" use="WP" />     
       <addr use="WP">     
       <streetAddressLine>Cardiac Stepdown Unit, 4B </streetAddressLine>    
       <streetAddressLine>1002 Healthcare Drive </streetAddressLine>  
-      <city>Ann Arbor</city>                    <state>MI</state>  
-      <postalCode>97857</postalCode>                 <country>US</country>   
+      <city>Ann Arbor</city>                 
+      <state>MI</state>  
+      <postalCode>97857</postalCode>           
+      <country>US</country>   
       </addr>
     </receivedOrganization>  
   </intendedRecipient>
   </informationRecipient>
-<!--This third one represents an HIE.  This document is used for multiple purposes.--/>
-<informationRecipient typeCode='PRCP'>
-  <intendedRecipient classCode ='ASSIGNED'>  
-    <informationRecipient>
-      <name>
-        <given>Nancy</given>      
-        <family>Nightingale</family>     
-        <suffix qualifier="AC">RN</suffix>  
-      </name>  
-    </informationRecipient>
+<!--This third one represents an HIE such as a state health exchange.--/>
+<informationRecipient typeCode='TRC'>
+  <intendedRecipient classCode ='HLTHCHRT'>  
     <receivedOrganization>
-      <name>Community Health and Hospitals</name>    
-      <telecom value="tel:+1(555)-555-1002" use="WP" /> 
+      <name>Anystate HIE</name>    
+      <telecom value="tel:+1(555)-555-1801" use="WP" /> 
       <addr use="WP">     
-        <streetAddressLine>Cardiac Stepdown Unit, 4B </streetAddressLine>  
-        <streetAddressLine>1002 Healthcare Drive </streetAddressLine>      
-        <city>Ann Arbor</city>
-        <state>MI</state>        
-        <postalCode>97857</postalCode>
+        <streetAddressLine>1 State Street</streetAddressLine>  
+        <streetAddressLine>Suite 1001 </streetAddressLine>      
+        <city>Montpeiler</city>
+        <state>VT</state>        
+        <postalCode>05467</postalCode>
         <country>US</country>     
       </addr>    
     </receivedOrganization>  
   </intendedRecipient>
 </informationRecipient>
-<!--This fourth one represents a second HIE.  This document is used for multiple purposes.--/>
-<informationRecipient typeCode='PRCP'> 
-  <intendedRecipient classCode ='ASSIGNED'> 
-    <informationRecipient>    
-      <name>
-        <given>Nancy</given>     
-        <family>Nightingale</family>
-        <suffix qualifier="AC">RN</suffix>
-      </name>  
-    </informationRecipient>    
-    <receivedOrganization>  
-      <name>Community Health and Hospitals</name>     
+<!--This fourth one represents a second private HIE that the organization owns.  This document is used for multiple purposes.--/>
+<informationRecipient typeCode='TRC'> 
+  <intendedRecipient classCode ='HLTHCHRT'> 
+    <receivedOrganization>  
+      <name>Community Health Centers of North East HIE</name>     
       <telecom value="tel:+1(555)-555-1002" use="WP" />    
       <addr use="WP">      
-        <streetAddressLine>Cardiac Stepdown Unit, 4B </streetAddressLine>    
-        <streetAddressLine>1002 Healthcare Drive </streetAddressLine>        
-        <city>Ann Arbor</city>  
-        <state>MI</state>
-        <postalCode>97857</postalCode>               
+        <streetAddressLine>101 Something Drive</streetAddressLine>    
+        <city>Somecity</city>  
+        <state>NY</state>
+        <postalCode>100019</postalCode>               
         <country>US</country>     
       </addr>  
     </receivedOrganization>   
